@@ -23,7 +23,7 @@ image:https://apclary.github.io/dungeon-revealer/img/example_player_1.jpeg[alt t
 
 Heroku is a platform-as-a-service that supports one-click deployments and has a free tier. You can sign up for an account, then click the button below to automatically deploy the app. It's the easiest way to get started.
 
-link:++https://heroku.com/deploy?template=https://github.com/tkfu/dungeon-revealer&env[PASSWORD]=pass++[image:https://www.herokucdn.com/deploy/button.svg["Deploy to Heroku"]]
+link:++https://heroku.com/deploy?template=https://github.com/LQuartier/dungeon-revealer&env[PASSWORD]=pass++[image:https://www.herokucdn.com/deploy/button.svg["Deploy to Heroku"]]
 
 === Docker
 
