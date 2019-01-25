@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\public",
-    "\\public\\javascripts"
+    "\\public\\javascripts",
+    "\\views"
   ],
-  "SelectedNode": "\\public\\javascripts\\settings.js",
+  "SelectedNode": "\\public\\javascripts\\brush.js",
   "PreviewInSolutionExplorer": false
 }
