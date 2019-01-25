@@ -263,8 +263,8 @@ define(['settings', 'jquery', 'brush'], function (settings, jquery, brush) {
             $('#btn-toggle-brush').click(function () {
                 var toggleButton = this;
                 if (toggleButton.innerHTML === 'Clear Brush') {
-                    toggleButton.innerHTML = 'Shadow Brush';
-                } else if (toggleButton.innerHTML === 'Shadow Brush'){
+                    toggleButton.innerHTML = 'Shroud Brush';
+                } else if (toggleButton.innerHTML === 'Shroud Brush'){
                     toggleButton.innerHTML = 'Friendly Brush';
                 } else if (toggleButton.innerHTML === 'Friendly Brush') {
                     toggleButton.innerHTML = 'Hostile Brush';

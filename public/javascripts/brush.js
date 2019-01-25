@@ -46,7 +46,7 @@ define(function () {
                 } else if (brushType === brushTypes[2]) {
                     context.globalCompositeOperation = 'source-over';
                     return 'rgba(' + settings.friendlyRGB + ',' + settings.fogOpacity + ')';
-                } else if (brushType === brushTypes[1]) {
+                } else if (brushType === brushTypes[3]) {
                     context.globalCompositeOperation = 'source-over';
                     return 'rgba(' + settings.hostileRGB + ',' + settings.fogOpacity + ')';
                 }
