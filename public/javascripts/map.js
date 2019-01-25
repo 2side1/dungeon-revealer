@@ -113,7 +113,17 @@ define(['settings', 'jquery', 'brush'], function (settings, jquery, brush) {
             var viewportOffset = fowCanvas.getBoundingClientRect(),
                 borderTop = parseInt($(fowCanvas).css('border-top-width')),
                 borderLeft = parseInt($(fowCanvas).css('border-left-width'));
-                
+            console.log("clientX: " + e.clientX);
+            console.log("viewPortOffsetLeft: " + viewportOffset.left);
+            console.log("borderleft: " + borderLeft);
+            console.log("MapDisplayRatio: " + getMapDisplayRatio());
+            console.log("Complete x coordinate: " + (e.clientX - viewportOffset.left - borderLeft) / getMapDisplayRatio());
+            console.log("##########");
+            console.log("clientY: " + e.clientY);
+            console.log("viewPortOffsetTop: " + viewportOffset.top);
+            console.log("borderTop: " + borderTop);
+            console.log("MapDisplayRatio: " + getMapDisplayRatio());
+            console.log("Complete y coordinate: " + (e.clientY - viewportOffset.top - borderTop) / getMapDisplayRatio());
             return {
                 x: (e.clientX - viewportOffset.left - borderLeft) / getMapDisplayRatio(),
                 y: (e.clientY - viewportOffset.top - borderTop) / getMapDisplayRatio()
