@@ -8,7 +8,7 @@ define(function () {
             throw new Error('Invalid args');
         }
 
-        var brushTypes = ["clear", "fog"],
+        var brushTypes = ["clear", "fog", "green", "red"],
             currentBrushType = brushTypes[0],
             currentPattern = null,
             setBrushType = function () {
@@ -20,9 +20,17 @@ define(function () {
                     currentBrushType = brushTypes[1];
                 } else if (currentBrushType === brushTypes[1]) {
 
+                    console.log("green brush set");
+                    currentBrushType = brushTypes[2];
+                } else if (currentBrushType === brushTypes[2]) {
+
+                    console.log("red brush set");
+                    currentBrushType = brushTypes[3];
+                } else if (currentBrushType === brushTypes[3]) {
+
                     console.log("clear brush set");
                     currentBrushType = brushTypes[0];
-                } else {
+                }else {
                     console.log("nothing: ");
                     console.log(currentBrushType);
                 }
@@ -35,6 +43,12 @@ define(function () {
                 } else if (brushType === brushTypes[1]) {
                     context.globalCompositeOperation = 'source-over';
                     return 'rgba(' + settings.fogRGB + ',' + settings.fogOpacity + ')';
+                } else if (brushType === brushTypes[2]) {
+                    context.globalCompositeOperation = 'source-over';
+                    return 'rgba(' + settings.friendlyRGB + ',' + settings.fogOpacity + ')';
+                } else if (brushType === brushTypes[1]) {
+                    context.globalCompositeOperation = 'source-over';
+                    return 'rgba(' + settings.hostileRGB + ',' + settings.fogOpacity + ')';
                 }
 
             },
