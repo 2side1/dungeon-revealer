@@ -114,13 +114,13 @@ define(['settings', 'jquery', 'brush'], function (settings, jquery, brush) {
                 borderTop = parseInt($(fowCanvas).css('border-top-width')),
                 borderLeft = parseInt($(fowCanvas).css('border-left-width'));
             console.log("client X: " + e.clientX);
-            console.log("DisplayRatio: " + getMapDisplayRatio());
-            console.log(" clientX/Dipslayratio: " + (e.clientX / getMapDisplayRatio()));
-            console.log("Complete x coordinate: " + (e.clientX - viewportOffset.left - borderLeft) / getMapDisplayRatio());
+            console.log("DisplayRatio: " + getMapDisplayRatio() );
+            console.log(" clientX/Dipslayratio: " + ( e.clientX / getMapDisplayRatio() ) );
+            console.log("Complete x coordinate: " + ( e.clientX - viewportOffset.left - borderLeft ) / getMapDisplayRatio() );
             console.log("client Y: " + e.clientY);
-            console.log("DisplayRatio: " + getMapDisplayRatio());
-            console.log(" clientY/Dipslayratio: " + (e.clientY / getMapDisplayRatio());
-            console.log("Complete Y coordinate: " + (e.clientY - viewportOffset.top - borderTop) / getMapDisplayRatio());
+            console.log("DisplayRatio: " + getMapDisplayRatio() );
+            console.log(" clientY/Dipslayratio: " + (e.clientY / getMapDisplayRatio() ) );
+            console.log("Complete Y coordinate: " + (e.clientY - viewportOffset.top - borderTop) / getMapDisplayRatio() );
             return {
                 x: (e.clientX - viewportOffset.left - borderLeft) / getMapDisplayRatio(),
                 y: (e.clientY - viewportOffset.top - borderTop) / getMapDisplayRatio()
