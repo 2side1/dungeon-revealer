@@ -115,7 +115,7 @@ define(['settings', 'jquery', 'brush'], function (settings, jquery, brush) {
                 borderLeft = parseInt($(fowCanvas).css('border-left-width'));
             console.log("client X: " + e.clientX);
             console.log("DisplayRatio: " + getMapDisplayRatio());
-            console.log(" clientX/Dipslayratio: " + (e.clientX / getMapDisplayRatio());
+            console.log(" clientX/Dipslayratio: " + (e.clientX / getMapDisplayRatio()));
             console.log("Complete x coordinate: " + (e.clientX - viewportOffset.left - borderLeft) / getMapDisplayRatio());
             console.log("client Y: " + e.clientY);
             console.log("DisplayRatio: " + getMapDisplayRatio());
